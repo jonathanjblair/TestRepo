@@ -1,0 +1,66 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.yourdomain.apptitle"
+	version 		= "1.0.0">
+
+	<name>PhoneGap: Getting Started</name>
+
+	<description>
+		A template for configuring PhoneGap and build.phonegap.com
+	</description>
+
+	<author href="your website"
+		email="your email">
+		Your Name
+	</author>
+
+	<!-- Images/icons -->
+        <icon src="icon.png"/> <!-- Default-->
+        
+        <!-- iOS Images/icons in order: Classic, New Retina, iPad -->
+        <icon src="images/icons/ios/icon.png" height="57" width="57"/>
+        <icon src="images/icons/ios/icon-72.png" height="72" width="72" gap:platform="ios"/>
+        <icon src="images/icons/ios/icon_at_2x.png" height="114" width="114"/>
+        
+<!-- Android Images/icons for each display type. Sizes: 36x36, 48x48, 72x72 -->
+        <icon src="images/icons/android/ldpi.png" gap:platform="android" gap:density="ldpi"/>
+        <icon src="images/icons/android/mdpi.png" gap:platform="android" gap:density="mdpi"/>
+        <icon src="images/icons/android/hdpi.png" gap:platform="android" gap:density="hdpi"/>
+       
+        <icon src="images/icons/bb/icon.png" gap:platform="blackberry"/>
+        <icon src="images/icons/bb/icon_hover.png" gap:platform="blackberry" gap:state="hover"/>
+        
+        <icon src="images/icons/winphone/icon.png" gap:platform="winphone"/>
+        <!-- winphone requires a pic for the tile images/icons -->
+        <icon gap:role="background" src="images/icons/winphone/titleicon.png" gap:platform="winphone"/>
+        
+        <icon src="images/icons/webos/icon.png" gap:platform="webos"/>
+        <icon gap:role="mini" src="images/icons/webos/miniicon.png" gap:platform="webos"/>
+
+        <! Splash Screens 
+        <gap:splash src="splash.png"/>
+	<!-- iOS Splash Screen -->
+        <gap:splash src="images/splash/ios/Default-Landscape.png" height="768" width="1024"/>
+        <gap:splash src="images/splash/ios/Default-Portrait.png" height="1024" width="768"/>
+        <gap:splash src="images/splash/ios/Default.png" height="480" width="320"/>
+        <gap:splash src="images/splash/ios/Default_at_2x.png" height="960" width="640"/>
+        <!-- Android sizes are the same as iOS for low(ldpi) 480x320, medium(mdpi) 960x640 and high (hdpi) 1024x768 -->
+        <gap:splash src="images/splash/android/ldpi.png" gap:platform="android" gap:density="ldpi"/>
+        <gap:splash src="images/splash/android/mdpi.png" gap:platform="android" gap:density="mdpi"/>
+        <gap:splash src="images/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi"/>
+        
+
+<gap:splash src="images/splash/bb/splash.png" gap:platform="blackberry"/>
+        <gap:splash src="images/splash/winphone/splash.jpg" gap:platform="winphone"/>
+        
+        <!-- Required Features -->
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+        
+        <!-- Preferences -->
+        <preference value="1.7.0" name="phonegap-version"/>
+	<preference name="orientation" value="portrait" />
+</widget>
